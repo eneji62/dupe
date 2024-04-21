@@ -1,0 +1,13 @@
+function generateFibonacci(limit) {
+    let fibonacciSequence = [0, 1];
+
+    for (let i = 2; i < limit; i++) {
+        fibonacciSequence[i] = fibonacciSequence[i - 1] + fibonacciSequence[i - 2];
+    }
+
+    return fibonacciSequence;
+}
+
+const limit = 10;
+const fibonacciSequence = generateFibonacci(limit);
+console.log(`Fibonacci sequence up to ${limit}:`, fibonacciSequence);
